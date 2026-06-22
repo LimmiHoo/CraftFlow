@@ -1,0 +1,23 @@
+# === Stage 53: Add command help text and usage examples ===
+# Project: CraftFlow
+def show_help():
+    print("CraftFlow - Creative Project Tracker")
+    print("Usage: python craftflow.py <command> [options]")
+    print()
+    print("Commands:")
+    print("  init              Initialize a new project file.")
+    print("  add_material      Add materials with cost and quantity.")
+    print("  add_milestone     Record a milestone completion date.")
+    print("  add_cost          Log additional expenses.")
+    print("  add_inspiration   Save an inspiration note or idea.")
+    print("  list              Display all tracked items.")
+    print("  stats             Show summary of costs and progress.")
+    print()
+    print("Options:")
+    print("  -h, --help        Show this help message and exit.")
+    print("  -f <file>         Specify a custom JSON file path (default: craftflow.json).")
+    print()
+    print("Examples:")
+    print("  python craftflow.py init")
+    print("  python craftflow.py add_material --name wood --cost 50.0 --qty 10")
+    print("  python craftflow.py stats -f my_project.json")
